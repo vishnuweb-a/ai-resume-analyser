@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h1>Manual Resume Builder</h1>
+
+<form method="POST" action="/resume/manual">
+  <label>Name</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label>Email</label><br>
+  <input type="email" name="email" required><br><br>
+
+  <label>Skills (comma separated)</label><br>
+  <textarea name="skills" required></textarea><br><br>
+
+  <label>Experience</label><br>
+  <textarea name="experience" required></textarea><br><br>
+
+  <label>Education</label><br>
+  <textarea name="education" required></textarea><br><br>
+
+  <button type="submit">Preview Resume</button>
+</form>
+
+</body>
+</html>
